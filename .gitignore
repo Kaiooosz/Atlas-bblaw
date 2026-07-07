@@ -1,0 +1,6 @@
+node_modules/
+playwright-report/
+test-results/
+*.log
+update_atlas.py
+update_responsive.py

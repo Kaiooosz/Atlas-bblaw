@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BBLAW | Transformamos complexidades jurídicas em oportunidades reais</title>
+<meta name="description" content="Escritório de direito empresarial, internacional, patrimonial e regulatório. Diagnóstico estratégico, soluções com escopo e preço definidos e o Atlas: a plataforma de inteligência jurídica da BBLAW.">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LegalService","name":"BBLAW, Bezerra Borges Advogados","slogan":"Transformamos complexidades jurídicas em oportunidades reais.","areaServed":["BR","US","Internacional"],"knowsAbout":["Internacionalização","Offshore","LLC nos Estados Unidos","Planejamento patrimonial e sucessório","Criptoativos","Fintechs","iGaming","Societário","Contratos","Compliance e regulação"]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#/home">BBLAW <span class="tag">Bezerra Borges</span></a>
+    <button class="burger" onclick="document.getElementById('navlinks').classList.toggle('open')">Menu</button>
+    <nav class="nav-links" id="navlinks">
+      <a href="#/servicos" data-nav="servicos">Atuação</a>
+      <a href="#/central" data-nav="central">Central de Soluções</a>
+      <a href="#/hubs" data-nav="hubs">Hubs</a>
+      <a href="#/insights" data-nav="insights">Insights</a>
+      <a href="#/sobre" data-nav="sobre">Sobre</a>
+      <a href="#/conta" class="nav-atlas" id="nav-account">Atlas · Entrar</a>
+      <a href="#/diagnostico" class="nav-cta" id="nav-main-cta">Iniciar diagnóstico</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<!-- ================= HOME ================= -->
+<div class="page" id="page-home">
+
+  <section class="hero">
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+    <div class="wrap hero-content">
+      <span class="eyebrow mono">BBLAW · Direito Empresarial · Internacional · Patrimonial · Regulatório</span>
+      <h1>Transformamos complexidades jurídicas em <span class="hl">oportunidades reais.</span></h1>
+      <p class="lede">Diagnóstico estratégico como porta de entrada, soluções com escopo e preço definidos, e o Atlas: a plataforma que dá a você o mapa do seu momento jurídico, patrimonial e internacional.</p>
+      <div class="btn-row">
+        <a class="btn light" href="#/diagnostico">Iniciar diagnóstico estratégico</a>
+        <a class="btn brass" href="#/conta">Conhecer o Atlas</a>
+      </div>
+    </div>
+    <span class="scrollcue">Rolar</span>
+  </section>
+
+  <section class="thesis">
+    <div class="wrap reveal">
+      <span class="eyebrow mono brand">§ A tese</span>
+      <p>Quase todo problema jurídico caro que atendemos poderia ter sido resolvido barato, antes. <strong>Nosso trabalho é antecipar o momento da decisão.</strong></p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="wrap feature reveal">
+      <div class="fig">
+        <figure>
+          <svg viewBox="0 0 460 560" role="img" aria-label="Painel de diagnóstico estratégico">
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f2f4f6"/></linearGradient>
+              <linearGradient id="gp" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1d4e5c"/><stop offset="1" stop-color="#153a46"/></linearGradient>
+            </defs>
+            <rect width="460" height="560" rx="16" fill="url(#g1)"/>
+            <rect x="0" y="0" width="460" height="118" rx="16" fill="url(#gp)"/>
+            <text x="36" y="52" font-family="monospace" font-size="10" letter-spacing="3" fill="#c9a86a">DIAGNÓSTICO · CONFIDENCIAL</text>
+            <text x="36" y="86" font-family="Georgia,serif" font-size="24" fill="#f4f6f7">Seu momento, mapeado</text>
+            <g font-family="monospace" font-size="10">
+              <rect x="36" y="152" width="388" height="54" rx="10" fill="#ffffff"/><rect x="36" y="152" width="388" height="54" rx="10" fill="none" stroke="#e3e8ec"/>
+              <text x="54" y="184" fill="#5a6a76">Patrimônio</text>
+              <rect x="150" y="174" width="180" height="8" rx="4" fill="#eef1f3"/><rect x="150" y="174" width="58" height="8" rx="4" fill="#b8452f"/>
+              <text x="392" y="184" fill="#b8452f" text-anchor="end">Crítico</text>
+              <rect x="36" y="216" width="388" height="54" rx="10" fill="#ffffff" stroke="#e3e8ec"/>
+              <text x="54" y="248" fill="#5a6a76">Eficiência fiscal</text>
+              <rect x="150" y="238" width="180" height="8" rx="4" fill="#eef1f3"/><rect x="150" y="238" width="96" height="8" rx="4" fill="#c08a2e"/>
+              <text x="392" y="248" fill="#c08a2e" text-anchor="end">Em atenção</text>
+              <rect x="36" y="280" width="388" height="54" rx="10" fill="#ffffff" stroke="#e3e8ec"/>
+              <text x="54" y="312" fill="#5a6a76">Banking</text>
+              <rect x="150" y="302" width="180" height="8" rx="4" fill="#eef1f3"/><rect x="150" y="302" width="132" height="8" rx="4" fill="#2e5f8a"/>
+              <text x="392" y="312" fill="#2e5f8a" text-anchor="end">Estruturado</text>
+              <rect x="36" y="344" width="388" height="54" rx="10" fill="#ffffff" stroke="#e3e8ec"/>
+              <text x="54" y="376" fill="#5a6a76">Mobilidade</text>
+              <rect x="150" y="366" width="180" height="8" rx="4" fill="#eef1f3"/><rect x="150" y="366" width="156" height="8" rx="4" fill="#2f7d54"/>
+              <text x="392" y="376" fill="#2f7d54" text-anchor="end">Otimizado</text>
+            </g>
+            <rect x="36" y="428" width="388" height="92" rx="10" fill="#fbf4ea"/>
+            <text x="54" y="458" font-family="monospace" font-size="9" letter-spacing="2" fill="#8a6a2e">ACHADO PRIORITÁRIO</text>
+            <text x="54" y="482" font-family="Georgia,serif" font-size="15" fill="#2a3540">Patrimônio integral na pessoa física,</text>
+            <text x="54" y="502" font-family="Georgia,serif" font-size="15" fill="#2a3540">exposto a litígio e inventário integral.</text>
+          </svg>
+          <figcaption>Score em faixas com <b>leitura clínica</b></figcaption>
+        </figure>
+      </div>
+      <div>
+        <span class="mono brand">§ 01 · Entrada</span>
+        <h2>O diagnóstico vem antes da proposta.</h2>
+        <p>Toda relação com a BBLAW começa por um diagnóstico estratégico de 5 a 7 minutos. Suas respostas geram um mapa do seu momento e permitem que a análise comece antes da primeira conversa.</p>
+        <p>Você recebe achados fundamentados, não um orçamento genérico. A proposta, quando fizer sentido, chega com escopo, etapas e honorários por escrito.</p>
+        <ul class="claims">
+          <li>Diagnóstico gratuito, sob sigilo profissional</li>
+          <li>Cada achado explica o porquê antes de sugerir o quê</li>
+          <li>Nenhuma cobrança antes do escopo aceito por escrito</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:20px">
+    <div class="wrap feature flip reveal">
+      <div class="fig">
+        <figure>
+          <svg viewBox="0 0 460 560" role="img" aria-label="Memorando de decisão com cenários comparados">
+            <rect width="460" height="560" rx="16" fill="#ffffff"/>
+            <rect x="0" y="0" width="460" height="10" rx="5" fill="#1d4e5c"/>
+            <text x="36" y="64" font-family="monospace" font-size="10" letter-spacing="3" fill="#8a6a2e">MEMORANDO BB-041 · DECISÃO ESTRUTURAL</text>
+            <text x="36" y="104" font-family="Georgia,serif" font-size="22" fill="#22303a">Jurisdição da holding:</text>
+            <text x="36" y="132" font-family="Georgia,serif" font-size="22" fill="#22303a">três cenários comparados</text>
+            <g font-family="monospace" font-size="10">
+              <rect x="36" y="168" width="184" height="150" rx="12" fill="#f4f6f7"/>
+              <text x="56" y="198" fill="#5a6a76">CENÁRIO A</text>
+              <text x="56" y="226" fill="#22303a" font-size="13">Custo anual: menor</text>
+              <text x="56" y="248" fill="#22303a" font-size="13">Tratado BR: não</text>
+              <text x="56" y="270" fill="#b8452f" font-size="13">Risco bancário: alto</text>
+              <rect x="240" y="168" width="184" height="150" rx="12" fill="#eaf3ee"/>
+              <text x="260" y="198" fill="#2f7d54">CENÁRIO B · ADOTADO</text>
+              <text x="260" y="226" fill="#22303a" font-size="13">Custo anual: médio</text>
+              <text x="260" y="248" fill="#22303a" font-size="13">Tratado BR: sim</text>
+              <text x="260" y="270" fill="#2f7d54" font-size="13">Risco bancário: baixo</text>
+              <rect x="36" y="334" width="388" height="72" rx="12" fill="#f4f6f7"/>
+              <text x="56" y="364" fill="#5a6a76">FUNDAMENTO</text>
+              <text x="56" y="388" fill="#22303a" font-size="13">Lei 14.754/2023, art. 5º + política bancária</text>
+            </g>
+            <path d="M60 472 C 110 446, 136 490, 182 466 S 258 446, 296 470" fill="none" stroke="#8a6a2e" stroke-width="1.6"/>
+            <line x1="60" y1="498" x2="340" y2="498" stroke="#d8dde1" stroke-width="1.5"/>
+            <text x="60" y="522" font-family="monospace" font-size="9" letter-spacing="2" fill="#9aa6ae">ASSINADO APÓS CENÁRIOS COMPARADOS · REGISTRADO</text>
+          </svg>
+          <figcaption>Decisão com <b>fundamento</b> registrado</figcaption>
+        </figure>
+      </div>
+      <div>
+        <span class="mono brand">§ 02 · O padrão</span>
+        <h2>Conformidade é a proteção.</h2>
+        <p>Estrutura internacional só protege se sobreviver a escrutínio bancário, fiscal e regulatório. Desenhamos para o dia em que alguém perguntar.</p>
+        <p>Cada decisão estrutural é apresentada em cenários comparados, com riscos, custos e consequências, e fica registrada em memorando. Daqui a três anos, você saberá por que cada escolha foi feita.</p>
+        <ul class="claims">
+          <li>Estruturas desenhadas para o cenário pós Lei 14.754/2023</li>
+          <li>Cenários comparados por escrito antes de cada decisão</li>
+          <li>Nada que não sustentaríamos diante do regulador</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATLAS SHOWCASE -->
+  <section class="section band-petrol">
+    <div class="wrap">
+      <div class="feature reveal">
+        <div>
+          <span class="eyebrow mono">Atlas · by BBLAW</span>
+          <h2>O mapa do seu momento jurídico, sempre à mão.</h2>
+          <p class="lede">O Atlas é a plataforma de inteligência da BBLAW, disponível para clientes e novas contas. Score estratégico em 10 dimensões, análise de negócios e patrimônio, achados fundamentados, assistente e a contratação de soluções pelo próprio painel.</p>
+          <ul class="claims">
+            <li><strong>Gratuito.</strong> Score completo, achados prioritários e assistente com uso limitado</li>
+            <li><strong>Membro.</strong> Todos os achados e ferramentas, consultas simples por e-mail, assistente ilimitado</li>
+            <li><strong>Membro anual.</strong> Tudo acima e 10% de desconto em qualquer contratação</li>
+          </ul>
+          <div class="btn-row" style="margin-top:28px">
+            <a class="btn light" href="#/diagnostico">Criar meu mapa grátis</a>
+            <a class="btn brass" href="#/central">Central de Soluções</a>
+          </div>
+        </div>
+        <div class="fig">
+          <figure>
+            <div class="mockwrap" style="background:#f4f6f7;padding:22px;border-radius:16px">
+              <div style="background:#1b3f4b;border-radius:12px;padding:16px 20px;display:flex;justify-content:space-between;align-items:center">
+                <span style="font-family:var(--mono);font-size:.6rem;letter-spacing:.16em;color:#c9a86a">ATLAS · VISÃO GERAL</span>
+                <span style="font-family:var(--mono);font-size:.56rem;letter-spacing:.12em;color:#9fc3b4;background:#245263;border-radius:6px;padding:4px 10px">MEMBRO</span>
+              </div>
+              <div style="display:grid;grid-template-columns:120px 1fr;gap:18px;margin-top:16px;align-items:center">
+                <svg viewBox="0 0 120 120" style="box-shadow:none">
+                  <circle cx="60" cy="60" r="50" fill="none" stroke="#e6ebee" stroke-width="10"/>
+                  <circle cx="60" cy="60" r="50" fill="none" stroke="#c08a2e" stroke-width="10" stroke-linecap="round" stroke-dasharray="176 314" transform="rotate(-90 60 60)"/>
+                  <text x="60" y="66" text-anchor="middle" font-family="Georgia,serif" font-size="26" fill="#22303a">56</text>
+                  <text x="60" y="84" text-anchor="middle" font-family="monospace" font-size="8" fill="#c08a2e">EM ATENÇÃO</text>
+                </svg>
+                <div style="font-family:var(--mono);font-size:.62rem;color:#5a6a76;line-height:2.1">
+                  <div>Patrimônio <span style="color:#b8452f;float:right">Crítico · 28</span></div>
+                  <div>Eficiência fiscal <span style="color:#c08a2e;float:right">Atenção · 47</span></div>
+                  <div>Proteção contra riscos <span style="color:#c08a2e;float:right">Atenção · 52</span></div>
+                  <div>Banking <span style="color:#2e5f8a;float:right">Estruturado · 68</span></div>
+                </div>
+              </div>
+              <div style="background:#fff;border-radius:10px;padding:16px 18px;margin-top:14px;border-left:4px solid #b8452f">
+                <span style="font-family:var(--mono);font-size:.56rem;letter-spacing:.14em;color:#b8452f">ACHADO CRÍTICO · PATRIMÔNIO</span>
+                <p style="font-size:.82rem;color:#3a4750;margin-top:6px">Patrimônio integral na pessoa física. Em caso de litígio ou sucessão, tudo responde e tudo inventaria.</p>
+              </div>
+            </div>
+            <figcaption>Atlas · disponível para <b>clientes</b> e novas contas</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow mono brand reveal">§ 03 · Como trabalhamos</span>
+      <div class="rows" style="margin-top:34px">
+        <div class="row-item reveal"><span class="num">01</span><div>
+          <h3>Diagnóstico estratégico</h3>
+          <p>Triagem estruturada, mapa em 10 dimensões e definição do problema real, que nem sempre é o que motivou o contato.</p>
+          <span class="fact">Formato · <b>5 a 7 minutos</b> · sigilo profissional</span></div></div>
+        <div class="row-item reveal"><span class="num">02</span><div>
+          <h3>Escopo fechado</h3>
+          <p>Proposta escrita com escopo, etapas, entregáveis, prazos indicativos e honorários. O que está fora do escopo também fica escrito. Aceite e pagamento digitais.</p>
+          <span class="fact">Regra · <b>nenhuma surpresa</b> em honorários</span></div></div>
+        <div class="row-item reveal"><span class="num">03</span><div>
+          <h3>Execução com status no Atlas</h3>
+          <p>Fases nomeadas, checklist documental, pendências visíveis, entregáveis e decisões registradas. Você acompanha pelo painel, sem precisar perguntar.</p>
+          <span class="fact">Padrão · <b>decisões documentadas</b> · fonte única</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section band-soft">
+    <div class="wrap">
+      <span class="eyebrow mono brand reveal">§ 04 · Áreas de atuação</span>
+      <div class="arealist reveal" style="margin-top:34px" id="home-areas"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <span class="eyebrow mono brand reveal">§ 05 · Hubs de conhecimento</span>
+      <p class="lede reveal" style="margin-top:20px">Seis universos, cada um com a tese, o mapa regulatório, as perguntas que respondemos e uma ferramenta gratuita.</p>
+      <div class="grid c3 reveal" style="margin-top:40px" id="home-hubs"></div>
+    </div>
+  </section>
+
+  <section class="finale band-soft">
+    <div class="wrap reveal">
+      <span class="eyebrow mono brand">§ Começar</span>
+      <h2 style="margin-top:18px">O primeiro passo não é uma reunião. É clareza.</h2>
+      <p class="lede" style="max-width:34em;margin:0 auto 36px">Inicie o diagnóstico estratégico, veja o mapa do seu momento no Atlas e avance no seu ritmo. Quando fizer sentido, a contratação tem escopo e preço definidos.</p>
+      <a class="btn primary" href="#/diagnostico">Iniciar diagnóstico estratégico</a>
+    </div>
+  </section>
+</div>
+<!-- ================= ATUAÇÃO ================= -->
+<div class="page" id="page-servicos">
+  <section class="page-hero"><div class="wrap">
+    <div class="crumb"><a href="#/home">BBLAW</a> / Atuação</div>
+    <h1>Onze frentes. Uma pergunta central: <em>o que está em risco sem estrutura?</em></h1>
+    <p class="lede">Cada frente mostra o problema que resolve, para quem é e o que muda quando o trabalho termina. O diagnóstico define por onde começar.</p>
+  </div></section>
+  <section class="section tight"><div class="wrap"><div class="arealist" id="services-index"></div></div></section>
+</div>
+
+<!-- ================= SERVIÇO ================= -->
+<div class="page" id="page-servico">
+  <section class="page-hero"><div class="wrap">
+    <div class="crumb"><a href="#/home">BBLAW</a> / <a href="#/servicos">Atuação</a> / <span id="sv-crumb"></span></div>
+    <h1 id="sv-h1"></h1><p class="lede" id="sv-sub"></p>
+  </div></section>
+  <section class="section tight"><div class="wrap detail-grid">
+    <div>
+      <div class="dblock"><span class="mono">O problema central</span><p class="big" id="sv-problema"></p></div>
+      <div class="dblock"><span class="mono">Para quem é</span><ul class="plainlist" id="sv-paraquem"></ul></div>
+      <div class="dblock"><span class="mono">Quando faz sentido</span><p id="sv-quando"></p></div>
+      <div class="dblock"><span class="mono">Riscos de não resolver</span><ul class="risklist" id="sv-riscos"></ul></div>
+      <div class="dblock"><span class="mono">Como a BBLAW atua</span><ol class="steps" id="sv-etapas"></ol></div>
+      <div class="dblock"><span class="mono">Decisões que você tomará</span><ul class="plainlist" id="sv-decisoes"></ul></div>
+      <div><span class="mono brand" style="display:block;margin:34px 0 16px">Perguntas frequentes</span><div class="faq" id="sv-faq"></div></div>
+    </div>
+    <aside><div class="sidepanel ficha">
+      <span class="mono">Ficha do serviço</span>
+      <div class="frow"><span class="k">Documentos usuais</span><span class="v" id="sv-docs"></span></div>
+      <div class="frow"><span class="k">Entregáveis</span><span class="v" id="sv-entrega"></span></div>
+      <div class="frow"><span class="k">Prazo indicativo</span><span class="v" id="sv-prazo"></span></div>
+      <div class="frow"><span class="k">Formato</span><span class="v">Escopo fechado ou contínuo</span></div>
+      <button class="btn primary" id="sv-cta">Iniciar diagnóstico desta demanda</button>
+      <p style="margin-top:14px">Proposta com escopo, etapas e honorários por escrito. Aceite e pagamento digitais.</p>
+    </div></aside>
+  </div></section>
+</div>
+
+<!-- ================= CENTRAL DE SOLUÇÕES ================= -->
+<div class="page" id="page-central">
+  <section class="page-hero"><div class="wrap">
+    <div class="crumb"><a href="#/home">BBLAW</a> / Central de Soluções</div>
+    <h1>Central de Soluções: escopo fechado, <em>preço na mesa.</em></h1>
+    <p class="lede">O que pode ser produtizado, produtizamos: escopo, prazo e investimento definidos antes de você decidir. O que exige desenho sob medida entra por proposta, depois do diagnóstico. Membros anuais do Atlas têm 10% de desconto.</p>
+  </div></section>
+  <section class="section tight"><div class="wrap">
+    <div id="products-list"></div>
+    <div class="feature" style="margin-top:80px">
+      <div>
+        <span class="eyebrow mono brand">Atlas · Plano Membro</span>
+        <h2 style="max-width:12em">Inteligência contínua, não só projetos.</h2>
+        <p>O plano Membro desbloqueia o Atlas completo: todos os achados e estratégias, todas as ferramentas, consultas simples por e-mail e o assistente sem limite de uso.</p>
+        <ul class="claims">
+          <li>Mensal: R$ 197/mês, cancele quando quiser</li>
+          <li>Anual: R$ 1.970/ano, dois meses grátis e 10% de desconto em serviços</li>
+          <li>O plano gratuito continua existindo, com score completo e achados prioritários</li>
+        </ul>
+        <div class="btn-row" style="margin-top:26px"><a class="btn primary" href="#/diagnostico">Começar grátis</a><button class="btn light" onclick="APP.goUpgrade()">Assinar Membro</button></div>
+      </div>
+      <div class="fig"><div class="sidepanel ficha" style="position:static">
+        <span class="mono">Comparativo</span>
+        <div class="frow"><span class="k">Score estratégico completo</span><span class="v">Grátis e Membro</span></div>
+        <div class="frow"><span class="k">Achados prioritários</span><span class="v">Grátis e Membro</span></div>
+        <div class="frow"><span class="k">Todos os achados e estratégias</span><span class="v">Membro</span></div>
+        <div class="frow"><span class="k">Ferramentas dos hubs</span><span class="v">Grátis e Membro</span></div>
+        <div class="frow"><span class="k">Assistente de IA</span><span class="v">Limitado / Ilimitado</span></div>
+        <div class="frow"><span class="k">Consultas simples por e-mail</span><span class="v">Membro</span></div>
+        <div class="frow"><span class="k">Desconto em serviços</span><span class="v">10% no anual</span></div>
+      </div></div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ================= HUBS ================= -->
+<div class="page" id="page-hubs">
+  <section class="page-hero"><div class="wrap">
+    <div class="crumb"><a href="#/home">BBLAW</a> / Hubs</div>
+    <h1>Seis hubs. <em>Domínio antes da oferta.</em></h1>
+    <p class="lede">Cada hub é um centro de conhecimento: a tese do nicho, o mapa regulatório, as perguntas que respondemos, uma ferramenta gratuita e um caso real anonimizado. As soluções vêm por último, porque autoridade se demonstra antes de se cobrar.</p>
+  </div></section>
+  <section class="section tight"><div class="wrap"><div class="grid c3" id="hubs-index"></div></div></section>
+</div>
+
+<!-- ================= HUB (dinâmico) ================= -->
+<div class="page" id="page-hub">
+  <section class="page-hero"><div class="wrap">
+    <div class="crumb"><a href="#/home">BBLAW</a> / <a href="#/hubs">Hubs</a> / <span id="hb-crumb"></span></div>
+    <h1 id="hb-h1"></h1><p class="lede" id="hb-sub"></p>
+  </div></section>
+  <section class="section tight"><div class="wrap">
+    <div class="detail-grid">
+      <div>
+        <div class="dblock"><span class="mono">A tese</span><p class="big" id="hb-tese"></p></div>
+        <div class="dblock"><span class="mono">O mapa do terreno</span><ol class="steps" id="hb-mapa"></ol></div>
+        <div class="dblock" style="background:var(--petrol-soft)"><span class="mono">Ferramenta gratuita</span><div id="hb-tool"></div></div>
+        <div class="dblock"><span class="mono">Caso anonimizado</span><div id="hb-caso"></div></div>
+        <div><span class="mono brand" style="display:block;margin:34px 0 16px">As perguntas que respondemos</span><div class="faq" id="hb-faq"></div></div>
+        <div style="margin-top:44px"><span class="mono brand" style="display:block;margin-bottom:16px">Soluções deste universo</span><div id="hb-produtos"></div></div>
+      </div>
+      <aside><div class="sidepanel">
+        <span class="mono">Guia pilar</span>
+        <p id="hb-guia-desc"></p>
+        <a class="btn light" id="hb-guia-link" href="#/insights" style="width:100%">Ler o guia completo</a>
+        <span class="mono" style="display:block;margin:26px 0 10px">Veja isso no seu caso</span>
+        <p>O diagnóstico mostra onde este tema está no seu momento.</p>
+        <a class="btn primary" href="#/diagnostico">Iniciar diagnóstico</a>
+      </div></aside>
+    </div>
+  </div></section>
+</div>
+
+<!-- ================= INSIGHTS ================= -->
+<div class="page" id="page-insights">
+  <section class="page-hero"><div class="wrap">
+    <div class="crumb"><a href="#/home">BBLAW</a> / Insights</div>
+    <h1>Biblioteca de <em>Insights</em></h1>
+    <p class="lede">Guias e respostas técnicas escritos para quem decide: indexáveis para quem busca, citáveis para quem pergunta a uma IA.</p>
+  </div></section>
+  <section class="section tight"><div class="wrap">
+    <div class="search-row" style="margin-bottom:18px;text-align:center"><input type="search" id="ins-search" placeholder="Buscar por tema: LLC, offshore, Lei 14.754, iGaming" aria-label="Buscar artigos"></div>
+    <div class="chips" id="ins-cats" style="margin-bottom:36px"></div>
+    <div id="ins-list"></div>
+  </div></section>
+</div>
+
+<!-- ================= ARTIGO (dinâmico) ================= -->
+<div class="page" id="page-artigo">
+  <section class="page-hero"><div class="wrap">
+    <div class="crumb"><a href="#/home">BBLAW</a> / <a href="#/insights">Insights</a> / <span id="ar-cat"></span></div>
+    <h1 id="ar-h1" style="max-width:20em"></h1>
+    <p class="lede" id="ar-sub"></p>
+  </div></section>
+  <section class="section tight"><div class="wrap detail-grid">
+    <div class="prose" id="ar-body"></div>
+    <aside><div class="sidepanel">
+      <span class="mono">Aplicar ao seu caso</span>
+      <p>Este guia é informativo. O diagnóstico mostra o que vale para o seu cenário específico.</p>
+      <a class="btn primary" href="#/diagnostico">Iniciar diagnóstico</a>
+      <a class="btn light" href="#/central" style="width:100%;margin-top:10px">Ver soluções relacionadas</a>
+    </div></aside>
+  </div></section>
+</div>
+
+<!-- ================= SOBRE ================= -->
+<div class="page" id="page-sobre">
+  <section class="page-hero"><div class="wrap">
+    <div class="crumb"><a href="#/home">BBLAW</a> / Sobre</div>
+    <h1>Um escritório construído para o empresário que o mercado ainda está <em>aprendendo a atender.</em></h1>
+    <p class="lede">A Bezerra Borges Advogados nasceu em São Paulo, na interseção entre direito, negócios digitais e estrutura internacional. Atendemos operações que não cabem no modelo tradicional de advocacia: cripto, pagamentos, iGaming, receitas globais e patrimônio em mais de um país.</p>
+  </div></section>
+  <section class="section tight"><div class="wrap">
+    <div class="grid c2">
+      <div class="card"><span class="mono brand">Somos</span><h3 style="margin:12px 0">Assessoria jurídica estratégica</h3>
+        <p style="color:var(--muted);font-size:.94rem">Estruturamos risco, patrimônio e expansão internacional, traduzimos regulação em decisão de negócio e conduzimos a execução: entidades, contratos, conformidade e governança. Com método, status visível no Atlas e decisões documentadas.</p></div>
+      <div class="card"><span class="mono brand">Não somos</span><h3 style="margin:12px 0">Loja de abertura de empresas</h3>
+        <p style="color:var(--muted);font-size:.94rem">Não vendemos jurisdição de prateleira nem kit offshore. Não prometemos resultado tributário sem análise do caso. Não recomendamos nada que não sustentaríamos diante do regulador.</p></div>
+    </div>
+    <span class="eyebrow mono brand" style="margin-top:70px">Sócios</span>
+    <div class="grid c2" style="margin-top:24px">
+      <div class="card">
+        <span class="mono" style="color:var(--brass)">Sócio fundador</span>
+        <h3 style="margin:12px 0">Roberto Bezerra</h3>
+        <p style="color:var(--muted);font-size:.93rem">À frente das práticas societária, contratual e de contencioso empresarial estratégico. Conduz reorganizações, acordos de sócios e disputas de alta complexidade, com a convicção de que o melhor litígio é o que a estrutura evitou. Advogado inscrito na OAB, com atuação em operações empresariais no Brasil e no exterior.</p>
+      </div>
+      <div class="card">
+        <span class="mono" style="color:var(--brass)">Sócio</span>
+        <h3 style="margin:12px 0">Vinícius Borges</h3>
+        <p style="color:var(--muted);font-size:.93rem">À frente das práticas de internacionalização, offshore, cripto e planejamento patrimonial e sucessório, e da construção do Atlas. Trabalha na fronteira entre direito, tecnologia e estrutura internacional, atendendo empresários digitais, traders e famílias com patrimônio multi-jurisdição. Advogado inscrito na OAB, com formação complementar em estruturação internacional.</p>
+      </div>
+    </div>
+    <div class="rows" style="margin-top:70px;max-width:100%">
+      <div class="row-item"><span class="num">§ 1</span><div><h3>Estrutura precede escala</h3><p>Quase todo problema jurídico caro que atendemos poderia ter sido resolvido barato, antes. Nosso trabalho é antecipar o momento da decisão.</p></div></div>
+      <div class="row-item"><span class="num">§ 2</span><div><h3>Conformidade é a proteção</h3><p>Estrutura só protege se sobreviver a escrutínio bancário, fiscal e regulatório. Desenhamos para o dia em que alguém perguntar.</p></div></div>
+      <div class="row-item"><span class="num">§ 3</span><div><h3>Clareza é entregável</h3><p>Toda entrega da BBLAW responde três perguntas: o que fazer, por quê, e o que acontece se não fizer.</p></div></div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ================= JURÍDICO ================= -->
+<div class="page" id="page-juridico">
+  <section class="page-hero"><div class="wrap">
+    <div class="crumb"><a href="#/home">BBLAW</a> / Jurídico e privacidade</div>
+    <h1>Transparência sobre <em>como operamos.</em></h1>
+  </div></section>
+  <section class="section tight"><div class="wrap">
+    <div class="dblock"><span class="mono">Aviso legal · OAB</span>
+      <p>Este site e o Atlas têm caráter informativo e educacional. Nenhum conteúdo, score ou achado constitui parecer jurídico ou consulta sobre caso concreto. A publicidade observa o Provimento 205/2021 da OAB. Preços exibidos referem-se a escopos definidos de serviços jurídicos, formalizados por contrato de honorários.</p></div>
+    <div class="dblock"><span class="mono">Privacidade · LGPD</span>
+      <p>Os dados fornecidos no diagnóstico e no Atlas são tratados sob sigilo profissional, com a finalidade exclusiva de análise do seu cenário e prestação dos serviços contratados, nos termos da Lei 13.709/2018. Não vendemos nem compartilhamos dados com terceiros para fins comerciais. Você pode solicitar acesso, correção ou exclusão a qualquer momento pelo canal de contato. Nesta versão de demonstração, os dados permanecem no seu navegador.</p></div>
+    <div class="dblock"><span class="mono">Limites da inteligência artificial</span>
+      <p>O assistente do Atlas fornece orientação geral e educativa, com base em conhecimento jurídico de caráter público. Ele não presta consulta jurídica, não conhece a integralidade do seu caso e pode conter imprecisões. Toda decisão relevante deve ser validada com a equipe da BBLAW. As conversas com o assistente não criam relação advogado-cliente.</p></div>
+    <div class="dblock"><span class="mono">Termos de uso do Atlas</span>
+      <p>O Atlas é disponibilizado como ferramenta de organização e orientação. O score estratégico é um indicador educativo baseado nas informações fornecidas por você, e sua exatidão depende delas. A assinatura Membro pode ser cancelada a qualquer momento, com efeitos ao fim do ciclo vigente. Os serviços contratados pela Central de Soluções são regidos por contrato próprio, com escopo, prazo e honorários definidos.</p></div>
+  </div></section>
+</div>
+
+<!-- ================= CONTA ================= -->
+<div class="page" id="page-conta">
+  <section class="page-hero center"><div class="wrap" style="max-width:640px">
+    <div class="crumb">BBLAW / Atlas</div>
+    <h1 id="conta-title">Acesse o Atlas</h1>
+    <p class="lede">A plataforma de inteligência da BBLAW, para clientes e novas contas. Crie a sua para iniciar o diagnóstico estratégico.</p>
+  </div></section>
+  <section class="section tight"><div class="wrap">
+    <div class="shell" style="max-width:520px">
+      <div class="chips" style="margin-bottom:28px">
+        <button class="chip active" id="tab-signup">Criar conta</button>
+        <button class="chip" id="tab-login">Já tenho conta</button>
+      </div>
+      <div id="auth-signup">
+        <div class="field"><label for="au-nome">Nome completo</label><input id="au-nome"></div>
+        <div class="field"><label for="au-email">E-mail</label><input id="au-email" type="email"></div>
+        <div class="field"><label for="au-pass">Senha</label><input id="au-pass" type="password"></div>
+        <label class="consent"><input type="checkbox" id="au-consent"> Autorizo o tratamento dos meus dados pela BBLAW com a finalidade de análise do meu cenário jurídico e patrimonial e prestação dos serviços, conforme a <a href="#/juridico" class="textlink">Política de Privacidade</a> (LGPD, Lei 13.709/2018). Posso revogar a qualquer momento.</label>
+        <p class="err" id="au-err">Preencha nome, e-mail e senha, e autorize o tratamento de dados para continuar.</p>
+        <button class="btn primary" style="width:100%;margin-top:12px" onclick="APP.signup()">Criar conta e iniciar diagnóstico</button>
+      </div>
+      <div id="auth-login" style="display:none">
+        <div class="field"><label for="li-email">E-mail</label><input id="li-email" type="email"></div>
+        <div class="field"><label for="li-pass">Senha</label><input id="li-pass" type="password"></div>
+        <p class="err" id="li-err">Conta não encontrada neste navegador. Crie uma conta.</p>
+        <button class="btn primary" style="width:100%;margin-top:12px" onclick="APP.login()">Entrar no Atlas</button>
+      </div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ================= DIAGNÓSTICO ================= -->
+<div class="page" id="page-diagnostico">
+  <section class="page-hero center"><div class="wrap" style="max-width:720px">
+    <div class="crumb"><a href="#/home">BBLAW</a> / Atlas / Diagnóstico estratégico</div>
+    <h1>Diagnóstico estratégico</h1>
+    <p class="lede">Suas respostas geram seu mapa em 10 dimensões e alimentam os achados do Atlas. Sob sigilo profissional.</p>
+  </div></section>
+  <section class="section tight"><div class="wrap">
+    <div class="shell" id="diag-shell">
+      <span class="mono brand" id="diag-step-label">Etapa 1 de 4 · Sua demanda</span>
+      <div class="diag-prog" id="diag-prog"><span class="on"></span><span></span><span></span><span></span></div>
+
+      <div class="fstep active" data-step="1">
+        <div class="field"><label for="d-tipo">Tipo de demanda *</label>
+          <select id="d-tipo" required><option value="">Selecionar</option>
+            <option>Internacionalização e offshore</option><option>LLC nos Estados Unidos</option>
+            <option>Planejamento patrimonial e sucessório</option><option>Cripto / Web3</option>
+            <option>Fintech / meios de pagamento</option><option>iGaming</option>
+            <option>Societário</option><option>Contratos empresariais</option>
+            <option>Compliance e regulação</option><option>Operações internacionais</option>
+            <option>Ainda não sei. Quero avaliar minha estrutura</option></select></div>
+        <div class="field"><label for="d-perfil">Seu perfil *</label>
+          <select id="d-perfil" required><option value="">Selecionar</option>
+            <option>Empresário digital / infoprodutor</option><option>Trader ou investidor cripto</option>
+            <option>Founder de fintech / gateway</option><option>Operação de iGaming</option>
+            <option>Família empresária / patrimônio relevante</option><option>Empresa com operação internacional</option>
+            <option>Founder de startup</option><option>Outro</option></select></div>
+        <div class="field"><label for="d-objetivo">Principal objetivo</label>
+          <textarea id="d-objetivo" placeholder="Ex.: receber vendas internacionais por uma LLC; proteger patrimônio antes de expandir; regularizar estrutura offshore existente."></textarea></div>
+        <p class="err" id="err-1">Selecione o tipo de demanda e o seu perfil para continuar.</p>
+      </div>
+
+      <div class="fstep" data-step="2">
+        <div class="f2">
+          <div class="field"><label for="d-pais">País / cidade de residência</label><input id="d-pais" placeholder="Ex.: São Paulo, Brasil"></div>
+          <div class="field"><label for="d-faixa">Faturamento ou faixa patrimonial</label>
+            <select id="d-faixa"><option value="">Prefiro não informar</option>
+              <option>Até R$ 1 milhão / ano</option><option>R$ 1 a 5 milhões / ano</option>
+              <option>R$ 5 a 20 milhões / ano</option><option>Acima de R$ 20 milhões / ano</option>
+              <option>Patrimônio relevante sem faturamento recorrente</option></select></div>
+        </div>
+        <div class="field"><label for="d-estr">Estrutura patrimonial atual</label>
+          <select id="d-estr"><option value="">Selecionar</option>
+            <option>Tudo na pessoa física</option><option>Holding nacional</option>
+            <option>Holding ou empresa offshore</option><option>Fundação privada ou trust</option>
+            <option>Estrutura mista</option></select></div>
+        <div class="field"><label>Objetivos principais</label>
+          <div class="optrow">
+            <label><input type="checkbox" name="d-obj" value="Reduzir impostos"> Reduzir impostos</label>
+            <label><input type="checkbox" name="d-obj" value="Mobilidade"> Morar fora / mobilidade</label>
+            <label><input type="checkbox" name="d-obj" value="Proteger patrimônio"> Proteger patrimônio</label>
+            <label><input type="checkbox" name="d-obj" value="Investir fora"> Investir fora</label>
+            <label><input type="checkbox" name="d-obj" value="Captar"> Captar investimento</label>
+            <label><input type="checkbox" name="d-obj" value="Regularizar"> Regularizar</label>
+          </div></div>
+        <div class="field"><label>Já possui empresa no exterior?</label>
+          <div class="optrow"><label><input type="radio" name="d-ext" value="Sim"> Sim</label><label><input type="radio" name="d-ext" value="Não"> Não</label><label><input type="radio" name="d-ext" value="Em constituição"> Em constituição</label></div></div>
+        <div class="field"><label>Sua operação envolve</label>
+          <div class="optrow">
+            <label><input type="checkbox" name="d-op" value="Cripto"> Cripto</label>
+            <label><input type="checkbox" name="d-op" value="Pagamentos"> Pagamentos</label>
+            <label><input type="checkbox" name="d-op" value="iGaming"> iGaming</label>
+            <label><input type="checkbox" name="d-op" value="Estrutura internacional"> Estrutura internacional</label>
+            <label><input type="checkbox" name="d-op" value="Nenhum"> Nenhum destes</label>
+          </div></div>
+      </div>
+
+      <div class="fstep" data-step="3">
+        <div class="field"><label for="d-urg">Urgência *</label>
+          <select id="d-urg" required><option value="">Selecionar</option>
+            <option>Imediata. Há prazo ou risco em curso</option>
+            <option>Alta. Preciso resolver nas próximas semanas</option>
+            <option>Planejada. Estou estruturando com antecedência</option>
+            <option>Exploratória. Quero entender opções</option></select></div>
+        <div class="field"><label>Há prazo regulatório, bancário, societário ou fiscal em aberto?</label>
+          <div class="optrow"><label><input type="radio" name="d-prazo" value="Sim"> Sim</label><label><input type="radio" name="d-prazo" value="Não"> Não</label><label><input type="radio" name="d-prazo" value="Não sei"> Não sei</label></div></div>
+        <div class="field"><label>Já recebeu exigência, bloqueio ou notificação?</label>
+          <div class="optrow"><label><input type="radio" name="d-not" value="Sim"> Sim</label><label><input type="radio" name="d-not" value="Não"> Não</label></div></div>
+        <div class="field"><label for="d-risco">Principal risco ou problema, na sua visão</label>
+          <textarea id="d-risco" placeholder="Descreva em poucas linhas."></textarea></div>
+        <p class="err" id="err-3">Informe o nível de urgência para continuar.</p>
+      </div>
+
+      <div class="fstep" data-step="4">
+        <p class="lede" style="margin-bottom:22px">Confirme seus dados de contato para receber o retorno da equipe.</p>
+        <div class="f2">
+          <div class="field"><label for="d-emp">Empresa (se houver)</label><input id="d-emp"></div>
+          <div class="field"><label for="d-zap">WhatsApp *</label><input id="d-zap" placeholder="+55 (11) 9"></div>
+        </div>
+        <p class="hint">Informações tratadas sob sigilo profissional e LGPD.</p>
+        <p class="err" id="err-4">Informe o WhatsApp para enviar.</p>
+      </div>
+
+      <div class="fstep" data-step="5">
+        <span class="mono brand">Diagnóstico concluído</span>
+        <h2 style="margin:14px 0 16px">Seu mapa está pronto.</h2>
+        <p class="lede" style="margin-bottom:26px">O Atlas já mostra suas 10 dimensões em faixas, os achados do seu momento e o que fazer em cada um. A equipe também recebe sua triagem.</p>
+        <a class="btn primary" href="#/portal">Abrir o Atlas</a>
+      </div>
+
+      <div class="diag-nav" id="diag-nav">
+        <button class="btn light" id="diag-back" style="visibility:hidden">Voltar</button>
+        <button class="btn primary" id="diag-next">Continuar</button>
+      </div>
+    </div>
+  </div></section>
+</div>
+
+<!-- ================= CONTATO ================= -->
+<div class="page" id="page-contato">
+  <section class="page-hero center"><div class="wrap" style="max-width:640px">
+    <div class="crumb"><a href="#/home">BBLAW</a> / Contato</div>
+    <h1>Falar com a equipe</h1>
+    <p class="lede">Para demandas, o caminho mais rápido é o diagnóstico. Para outros assuntos, escreva abaixo.</p>
+  </div></section>
+  <section class="section tight"><div class="wrap"><div class="shell" style="max-width:520px" id="contact-shell">
+    <div class="field"><label for="ct-nome">Nome</label><input id="ct-nome"></div>
+    <div class="field"><label for="ct-email">E-mail</label><input id="ct-email" type="email"></div>
+    <div class="field"><label for="ct-msg">Mensagem</label><textarea id="ct-msg"></textarea></div>
+    <button class="btn primary" style="width:100%" onclick="APP.contact()">Enviar mensagem</button>
+  </div></div></section>
+</div>
+<!-- ================= ATLAS (portal) ================= -->
+<div class="page" id="page-portal">
+  <section class="section" style="padding-top:110px">
+    <div class="wrap">
+      <div class="atlas-top">
+        <div><span class="mono" style="color:var(--brass)">Atlas · by BBLAW</span><h2 id="pn-nome" style="margin-top:4px;font-size:1.6rem">Cliente</h2></div>
+        <span class="planpill" id="pn-plan">Plano gratuito</span>
+      </div>
+      <div class="portal-grid">
+        <aside class="portal-nav">
+          <button class="pn-link active" data-view="visao">Visão geral</button>
+          <button class="pn-link" data-view="negocios">Negócios</button>
+          <button class="pn-link" data-view="patrimonio">Patrimônio</button>
+          <button class="pn-link" data-view="demandas">Demandas</button>
+          <button class="pn-link" data-view="assistente">Assistente</button>
+          <button class="pn-link" data-view="plano">Meu plano</button>
+          <button class="pn-link" onclick="APP.logout()" style="color:var(--faint)">Sair</button>
+        </aside>
+        <div class="portal-body">
+
+          <div class="pview active" id="pv-visao">
+            <div id="score-empty" class="card" style="text-align:center;padding:52px">
+              <span class="mono brand">Primeiro passo</span>
+              <h3 style="margin:12px 0">Gere seu mapa estratégico.</h3>
+              <p style="color:var(--muted);max-width:34em;margin:0 auto">Cinco minutos de perguntas, dez dimensões analisadas em faixas claras: do Crítico ao Otimizado.</p>
+              <a class="btn primary" href="#/diagnostico" style="margin-top:22px">Iniciar diagnóstico estratégico</a>
+            </div>
+            <div id="score-box" style="display:none">
+              <div class="score-hero card">
+                <div class="gaugewrap"><svg viewBox="0 0 180 110" id="gauge"></svg></div>
+                <div>
+                  <span class="mono" id="score-band-label"></span>
+                  <p id="score-read" style="color:var(--muted);max-width:30em;margin-top:8px"></p>
+                  <div class="legend">
+                    <span><i style="background:var(--crit)"></i>0–39 Crítico</span>
+                    <span><i style="background:var(--warn)"></i>40–59 Em atenção</span>
+                    <span><i style="background:var(--str)"></i>60–79 Estruturado</span>
+                    <span><i style="background:var(--opt)"></i>80–100 Otimizado</span>
+                  </div>
+                  <div class="btn-row" style="margin-top:14px;gap:10px">
+                    <a class="chip" href="#/diagnostico">Refazer diagnóstico</a>
+                    <button class="chip" onclick="APP.exportPDF()">Exportar diagnóstico em PDF</button>
+                  </div>
+                </div>
+              </div>
+              <div id="consolidated" style="margin-top:18px"></div>
+              <div id="benchmark" style="margin-top:18px"></div>
+              <div id="score-bars" style="margin-top:18px"></div>
+              <div style="margin:44px 0 18px"><span class="eyebrow mono brand">Achados do seu momento</span>
+              <p style="color:var(--muted);font-size:.9rem;max-width:44em;margin-top:12px">Cada achado explica o que identificamos, por que importa e o que fazer, incluindo sempre uma ação que você mesmo pode executar. A operacionalização pela BBLAW vem por último.</p></div>
+              <div id="score-insights"></div>
+            </div>
+          </div>
+
+          <div class="pview" id="pv-negocios">
+            <div class="pv-head"><h3>Negócios</h3><button class="btn primary" onclick="APP.toggleBizForm()">Adicionar negócio</button></div>
+            <div id="biz-form" class="card" style="display:none;margin-bottom:20px">
+              <input type="hidden" id="bz-idx" value="-1">
+              <span class="mono brand" id="bz-formtitle">Novo negócio · análise essencial</span>
+              <p style="color:var(--muted);font-size:.86rem;margin:8px 0 18px">Preencha o essencial para uma primeira análise. Depois, se quiser, abra as informações complementares para um diagnóstico mais refinado.</p>
+              <div class="f2">
+                <div class="field"><label>Nome do negócio</label><input id="bz-nome"></div>
+                <div class="field"><label>Setor</label><select id="bz-setor"><option>Digital / infoprodutos</option><option>Tecnologia / SaaS</option><option>Fintech / pagamentos</option><option>iGaming</option><option>Serviços</option><option>Comércio / indústria</option><option>Outro</option></select></div>
+                <div class="field"><label>Faturamento anual</label><select id="bz-fat"><option>Até R$ 1 mi</option><option>R$ 1 a 5 mi</option><option>R$ 5 a 20 mi</option><option>Acima de R$ 20 mi</option></select></div>
+                <div class="field"><label>Funcionários CLT</label><select id="bz-clt"><option>Nenhum</option><option>1 a 10</option><option>11 a 59</option><option>60 a 200</option><option>Mais de 200</option></select></div>
+              </div>
+              <div class="field"><label>Situação atual (marque o que já possui)</label><div class="optrow">
+                <label><input type="checkbox" name="bz-f" value="intl"> Vende internacionalmente</label>
+                <label><input type="checkbox" name="bz-f" value="captacao"> Captação prevista</label>
+                <label><input type="checkbox" name="bz-f" value="regulado"> Setor regulado / licenças</label>
+                <label><input type="checkbox" name="bz-f" value="marca"> Marca registrada</label>
+                <label><input type="checkbox" name="bz-f" value="software"> Software com PI protegida</label>
+                <label><input type="checkbox" name="bz-f" value="contratos"> Contratos padronizados</label>
+                <label><input type="checkbox" name="bz-f" value="socios"> Acordo de sócios vigente</label>
+                <label><input type="checkbox" name="bz-f" value="riscos"> Plano de riscos psicossociais NR-1</label>
+                <label><input type="checkbox" name="bz-f" value="inad"> Inadimplência relevante a recuperar</label>
+              </div></div>
+              <button class="chip" style="margin:4px 0 8px" onclick="el('bz-refined').style.display=el('bz-refined').style.display==='none'?'block':'none'">+ Informações complementares (análise refinada)</button>
+              <div id="bz-refined" style="display:none;background:var(--surface-2);border-radius:10px;padding:20px;margin-top:8px">
+                <div class="f2">
+                  <div class="field"><label>Nº de sócios</label><select id="bz-nsocios"><option>Sócio único</option><option>2 sócios</option><option>3 a 4 sócios</option><option>5 ou mais</option></select></div>
+                  <div class="field"><label>Regime tributário</label><select id="bz-regime"><option>Não sei</option><option>Simples Nacional</option><option>Lucro Presumido</option><option>Lucro Real</option></select></div>
+                </div>
+                <div class="field"><label>Situação complementar</label><div class="optrow">
+                  <label><input type="checkbox" name="bz-f2" value="pj"> Uso relevante de prestadores PJ</label>
+                  <label><input type="checkbox" name="bz-f2" value="critavaliacao"> Falta critério de avaliação da empresa</label>
+                  <label><input type="checkbox" name="bz-f2" value="semvesting"> Sócios sem vesting/permanência</label>
+                  <label><input type="checkbox" name="bz-f2" value="dadosclientes"> Trata dados pessoais de clientes</label>
+                  <label><input type="checkbox" name="bz-f2" value="passivojud"> Já responde ações trabalhistas</label>
+                  <label><input type="checkbox" name="bz-f2" value="dependencia"> Operação depende de 1 pessoa</label>
+                </div></div>
+              </div>
+              <div style="text-align:center;margin-top:16px"><button class="btn primary" id="bz-submit" onclick="APP.addBiz()">Analisar negócio</button> <button class="btn light" onclick="APP.cancelBiz()">Cancelar</button></div>
+            </div>
+            <div id="biz-list"></div>
+          </div>
+
+          <div class="pview" id="pv-patrimonio">
+            <div class="pv-head"><h3>Patrimônio</h3><button class="btn primary" onclick="APP.togglePatForm()">Atualizar informações</button></div>
+            <div id="pat-form" class="card" style="display:none;margin-bottom:20px">
+              <div class="f2">
+                <div class="field"><label>Faixa patrimonial</label><select id="pt-faixa"><option>Até R$ 1 mi</option><option>R$ 1 a 5 mi</option><option>R$ 5 a 20 mi</option><option>Acima de R$ 20 mi</option></select></div>
+                <div class="field"><label>Estrutura atual</label><select id="pt-estr"><option>Tudo na pessoa física</option><option>Holding nacional</option><option>Holding offshore</option><option>Fundação privada ou trust</option><option>Mista</option></select></div>
+              </div>
+              <div class="field" style="text-align:left"><label style="text-align:left">Composição do patrimônio (arraste até somar 100%)</label>
+                <div id="pt-sliders">
+                  <div class="slrow" data-comp="Imóveis"><span class="sllabel">Imóveis</span><input type="range" min="0" max="100" value="40" oninput="APP.slide(this.closest('.slrow'))"><span class="slval">40%</span></div>
+                  <div class="slrow" data-comp="Participações"><span class="sllabel">Participações societárias</span><input type="range" min="0" max="100" value="25" oninput="APP.slide(this.closest('.slrow'))"><span class="slval">25%</span></div>
+                  <div class="slrow" data-comp="Cripto"><span class="sllabel">Cripto</span><input type="range" min="0" max="100" value="10" oninput="APP.slide(this.closest('.slrow'))"><span class="slval">10%</span></div>
+                  <div class="slrow" data-comp="Exterior"><span class="sllabel">Investimentos no exterior</span><input type="range" min="0" max="100" value="10" oninput="APP.slide(this.closest('.slrow'))"><span class="slval">10%</span></div>
+                  <div class="slrow" data-comp="Financeiro"><span class="sllabel">Aplicações no Brasil</span><input type="range" min="0" max="100" value="15" oninput="APP.slide(this.closest('.slrow'))"><span class="slval">15%</span></div>
+                </div>
+                <div class="compbar" id="pt-preview" style="margin-top:14px"></div>
+                <div id="pt-sum" class="mono" style="text-align:center;margin-top:8px"></div>
+              </div>
+              <div class="field"><label>Família e objetivos</label><div class="optrow">
+                <label><input type="checkbox" name="pt-o" value="filhos"> Filhos / herdeiros</label>
+                <label><input type="checkbox" name="pt-o" value="sucessao"> Planejar sucessão</label>
+                <label><input type="checkbox" name="pt-o" value="morarfora"> Morar fora</label>
+                <label><input type="checkbox" name="pt-o" value="proteger"> Proteger de riscos da operação</label>
+              </div></div>
+              <div style="text-align:center"><button class="btn primary" onclick="APP.savePat()">Analisar patrimônio</button></div>
+            </div>
+            <div id="pat-view"></div>
+          </div>
+
+          <div class="pview" id="pv-demandas">
+            <div class="pv-head"><h3>Demandas</h3><button class="btn primary" onclick="APP.toggleDemandForm()">Abrir nova demanda</button></div>
+            <div id="demand-form" class="card" style="display:none;margin-bottom:22px">
+              <span class="mono brand">Framework de solicitação</span>
+              <p style="color:var(--muted);font-size:.86rem;margin:8px 0 18px">Quanto mais claro o pedido, mais precisa a resposta da equipe. Preencha abaixo; você pode partir de uma demanda pré-definida ou descrever a sua.</p>
+              <div class="field" style="text-align:left"><label style="text-align:left">Demanda pré-definida (opcional)</label>
+                <select id="dm-pre" onchange="APP.fillPredef()"><option value="">Descrever demanda personalizada</option></select></div>
+              <div class="field" style="text-align:left"><label style="text-align:left">Nome da demanda *</label><input id="dm-nome" style="text-align:left;max-width:none" placeholder="Ex.: Blindagem patrimonial da família antes da venda da empresa"></div>
+              <div class="f2">
+                <div class="field" style="text-align:left"><label style="text-align:left">Orçamento ideal para esta solução</label><input id="dm-orc" style="text-align:left;max-width:none" placeholder="Ex.: até R$ 20.000"></div>
+                <div class="field" style="text-align:left"><label style="text-align:left">Prioridade</label><select id="dm-prio" style="text-align:left;max-width:none"><option>Alta · há prazo ou risco correndo</option><option>Média · quero resolver nos próximos meses</option><option>Baixa · estou planejando com antecedência</option></select></div>
+              </div>
+              <div class="field" style="text-align:left"><label style="text-align:left">Que problema isto resolve? *</label><textarea id="dm-prob" placeholder="Descreva o problema ou objetivo com suas palavras."></textarea></div>
+              <div class="field" style="text-align:left"><label style="text-align:left">Comentários e contexto</label>
+                <textarea id="dm-obs" placeholder="Ajude a equipe a responder melhor. Considere incluir: o que já tentou antes e não funcionou; se há outras pessoas envolvidas na decisão (sócios, cônjuge, família); prazos concretos; valores envolvidos; e qualquer detalhe sensível que mude a estratégia."></textarea>
+                <p class="hint" style="text-align:left">Sugestão: o que já tentou · quem decide com você · prazos · valores · restrições.</p></div>
+              <div style="text-align:center;margin-top:6px"><button class="btn primary" onclick="APP.submitDemand()">Enviar demanda à equipe</button> <button class="btn light" onclick="el('demand-form').style.display='none'">Cancelar</button></div>
+            </div>
+            <div class="reporthead" id="predef-head" style="display:none"><span class="mono brand">Iniciar a partir de uma solução</span><p>Demandas comuns que você pode abrir em um clique e ajustar em seguida.</p></div>
+            <div id="predef-grid" class="grid c3" style="margin-bottom:26px"></div>
+            <div id="dem-list"></div>
+          </div>
+
+          <div class="pview" id="pv-assistente">
+            <div class="pv-head"><h3>Assistente Atlas</h3><span class="mono" style="color:var(--faint)" id="chat-quota"></span></div>
+            <p style="color:var(--muted);max-width:44em;margin-bottom:20px;font-size:.9rem">Orientação geral com a inteligência da BBLAW. Não é consulta jurídica e não cria relação advogado-cliente. <a class="textlink" href="#/juridico">Limites da IA</a>.</p>
+            <div class="chatbox" id="chatlog"></div>
+            <div class="chatrow"><input id="chat-in" placeholder="Ex.: quando uma holding familiar faz sentido?"><button class="btn primary" onclick="APP.chatSend()">Enviar</button></div>
+          </div>
+
+          <div class="pview" id="pv-plano"><div class="pv-head"><h3>Meu plano</h3></div><div id="plan-view"></div></div>
+          <div class="pview" id="pv-proposta"><div class="pv-head"><h3>Proposta</h3></div><div id="prop-view"></div></div>
+          <div class="pview" id="pv-pagamento"><div class="pv-head"><h3>Pagamento</h3></div><div id="pay-view"></div></div>
+        </div>
+      </div>
+      <p class="hint" style="margin-top:34px;max-width:70em">O Atlas é uma ferramenta de orientação e organização. Scores e achados são indicadores educativos baseados nas suas respostas e não constituem parecer jurídico. <a class="textlink" href="#/juridico">Aviso legal</a>.</p>
+    </div>
+  </section>
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <span class="logo" style="color:#fff">BBLAW <span class="tag">Bezerra Borges</span></span>
+        <p style="margin-top:14px;max-width:26em">Transformamos complexidades jurídicas em oportunidades reais. Internacionalização, patrimônio, cripto, pagamentos, iGaming e regulação.</p>
+      </div>
+      <div><span class="mono">Navegar</span><a href="#/servicos">Atuação</a><a href="#/central">Central de Soluções</a><a href="#/hubs">Hubs</a><a href="#/insights">Insights</a><a href="#/sobre">Sobre</a></div>
+      <div><span class="mono">Atlas</span><a href="#/diagnostico">Diagnóstico estratégico</a><a href="#/conta">Entrar</a><a href="#/contato">Contato</a></div>
+      <div><span class="mono">Institucional</span><a href="#/juridico">Aviso legal · OAB</a><a href="#/juridico">Privacidade · LGPD</a><a href="#/juridico">Termos e limites da IA</a></div>
+    </div>
+    <div class="base">
+      <span>© 2026 Bezerra Borges Advogados. Conteúdo informativo, sem caráter de consulta jurídica. Publicidade conforme o Provimento 205/2021 da OAB.</span>
+      <span class="mono">São Paulo · Internacional</span>
+    </div>
+  </div>
+</footer>
+
+
+<script src="js/data.js" defer></script>
+<script src="js/atlas.js" defer></script>
+
+</body>
+</html>
