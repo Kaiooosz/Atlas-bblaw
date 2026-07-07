@@ -224,6 +224,25 @@ main{min-height:60vh}
 .art-card p{font-size:.9rem;color:var(--muted)}
 .art-card .pill{font-family:var(--mono);font-size:.56rem;letter-spacing:.1em;color:var(--brass);text-transform:uppercase;margin-top:6px}
 a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--petrol);outline-offset:2px}
+
+/* ================= MOBILE RESPONSIVENESS TWEAKS ================= */
+@media (max-width: 768px) {
+  .hero-content { padding: 100px 0 60px; }
+  .section { padding: 60px 0; }
+  .feature { gap: 32px; }
+  .thesis p { font-size: 1.5rem; margin-top: 16px; }
+  .btn-row { flex-direction: column; width: 100%; }
+  .btn-row .btn { width: 100%; }
+  .row-item { grid-template-columns: 1fr; gap: 12px; padding: 24px; }
+  .row-item .num { padding-top: 0; margin-bottom: -4px; }
+  .hero h1 { font-size: 2.3rem; margin-top: 12px; }
+  .finale h2 { font-size: 2rem; }
+  .art-card { padding: 20px; grid-template-columns: 1fr; gap: 12px; }
+  .sidepanel { padding: 20px; }
+  .shell { padding: 24px 16px; }
+  .nav-links { padding: 16px 20px 24px; gap: 12px; }
+  .nav-cta, .nav-atlas { width: 100%; text-align: center; margin-top: 8px; }
+}
 </style>
 </head>
 <body>
@@ -1078,6 +1097,25 @@ a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var
 .toolform .field{margin:0;text-align:left;flex:1;min-width:150px}
 .toolform input,.toolform select{max-width:none;text-align:left}
 .toolout{border-radius:10px;padding:18px 20px;font-size:.92rem;margin-top:10px;display:none}
+
+/* ================= MOBILE RESPONSIVENESS TWEAKS ================= */
+@media (max-width: 768px) {
+  .hero-content { padding: 100px 0 60px; }
+  .section { padding: 60px 0; }
+  .feature { gap: 32px; }
+  .thesis p { font-size: 1.5rem; margin-top: 16px; }
+  .btn-row { flex-direction: column; width: 100%; }
+  .btn-row .btn { width: 100%; }
+  .row-item { grid-template-columns: 1fr; gap: 12px; padding: 24px; }
+  .row-item .num { padding-top: 0; margin-bottom: -4px; }
+  .hero h1 { font-size: 2.3rem; margin-top: 12px; }
+  .finale h2 { font-size: 2rem; }
+  .art-card { padding: 20px; grid-template-columns: 1fr; gap: 12px; }
+  .sidepanel { padding: 20px; }
+  .shell { padding: 24px 16px; }
+  .nav-links { padding: 16px 20px 24px; gap: 12px; }
+  .nav-cta, .nav-atlas { width: 100%; text-align: center; margin-top: 8px; }
+}
 </style>
 <script>
 const SERVICES={
@@ -1688,7 +1726,26 @@ exportPDF(){const sc=S.scores;if(!sc){alert("Gere seu diagnóstico primeiro.");r
  .ft{font-family:Georgia,serif;font-size:15px;font-weight:bold;margin-bottom:8px}
  .sev{font-family:monospace;font-size:9px;background:#e5ebee;padding:2px 7px;border-radius:4px;color:#1d4e5c}
  .pr{color:#1d4e5c;font-weight:600;margin-top:8px}
- .foot{margin-top:30px;font-size:10px;color:#888;font-family:Arial}</style></head><body>
+ .foot{margin-top:30px;font-size:10px;color:#888;font-family:Arial}
+/* ================= MOBILE RESPONSIVENESS TWEAKS ================= */
+@media (max-width: 768px) {
+  .hero-content { padding: 100px 0 60px; }
+  .section { padding: 60px 0; }
+  .feature { gap: 32px; }
+  .thesis p { font-size: 1.5rem; margin-top: 16px; }
+  .btn-row { flex-direction: column; width: 100%; }
+  .btn-row .btn { width: 100%; }
+  .row-item { grid-template-columns: 1fr; gap: 12px; padding: 24px; }
+  .row-item .num { padding-top: 0; margin-bottom: -4px; }
+  .hero h1 { font-size: 2.3rem; margin-top: 12px; }
+  .finale h2 { font-size: 2rem; }
+  .art-card { padding: 20px; grid-template-columns: 1fr; gap: 12px; }
+  .sidepanel { padding: 20px; }
+  .shell { padding: 24px 16px; }
+  .nav-links { padding: 16px 20px 24px; gap: 12px; }
+  .nav-cta, .nav-atlas { width: 100%; text-align: center; margin-top: 8px; }
+}
+</style></head><body>
  <div class="head"><span class="mono">BBLAW · Atlas · Diagnóstico Estratégico Confidencial</span>
  <h1>${S.user.nome}</h1><span class="mono" style="color:#5a6a76">Emitido em ${new Date().toLocaleDateString("pt-BR")}</span></div>
  <span class="mono">Score geral</span><div class="tot">${total} · ${bandName(total)}</div>
@@ -2243,6 +2300,25 @@ APP.boot();
 .briefrow+.briefrow{padding-top:8px;box-shadow:0 -1px 0 var(--bg)}
 .bk{font-family:var(--mono);font-size:.58rem;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
 .bv{color:var(--ink)}
+
+/* ================= MOBILE RESPONSIVENESS TWEAKS ================= */
+@media (max-width: 768px) {
+  .hero-content { padding: 100px 0 60px; }
+  .section { padding: 60px 0; }
+  .feature { gap: 32px; }
+  .thesis p { font-size: 1.5rem; margin-top: 16px; }
+  .btn-row { flex-direction: column; width: 100%; }
+  .btn-row .btn { width: 100%; }
+  .row-item { grid-template-columns: 1fr; gap: 12px; padding: 24px; }
+  .row-item .num { padding-top: 0; margin-bottom: -4px; }
+  .hero h1 { font-size: 2.3rem; margin-top: 12px; }
+  .finale h2 { font-size: 2rem; }
+  .art-card { padding: 20px; grid-template-columns: 1fr; gap: 12px; }
+  .sidepanel { padding: 20px; }
+  .shell { padding: 24px 16px; }
+  .nav-links { padding: 16px 20px 24px; gap: 12px; }
+  .nav-cta, .nav-atlas { width: 100%; text-align: center; margin-top: 8px; }
+}
 </style>
 </body>
 </html>
