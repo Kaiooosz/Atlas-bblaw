@@ -181,6 +181,13 @@ contact(){
   // Loading state
   if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Enviando…'; }
 
+  // Salva no banco de dados remotamente (PostgreSQL)
+  fetch('/api/contato', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ nome, email, assunto, mensagem: msg })
+  }).catch(err => console.error('Erro ao salvar no banco:', err));
+
   // Envia via mailto com corpo estruturado
   const corpo = `Nome: ${nome}\nE-mail: ${email}\nAssunto: ${assunto}\n\nMensagem:\n${msg}`;
   const mailtoLink = `mailto:contato@bblaw.com.br?subject=${encodeURIComponent('[Site] ' + assunto + ' — ' + nome)}&body=${encodeURIComponent(corpo)}`;
@@ -204,11 +211,37 @@ contact(){
 
 /* ---- diagnóstico → scores ---- */
 onDiagnosticComplete(){
-const v=id=>el(id)?el(id).value:"";const rad=n=>{const r=document.querySelector(`input[name="${n}"]:checked`);return r?r.value:"";};
-const chk=n=>[...document.querySelectorAll(`input[name="${n}"]:checked`)].map(x=>x.value);
-const d={tipo:v("d-tipo"),perfil:v("d-perfil"),estr:v("d-estr"),obj:chk("d-obj"),ext:rad("d-ext"),op:chk("d-op"),faixa:v("d-faixa"),urg:v("d-urg"),prazo:rad("d-prazo"),not:rad("d-not")};
-S.diag=Object.assign(S.diag||{},d);
-this.recompute();this.save();},
+  const v=id=>el(id)?el(id).value:"";const rad=n=>{const r=document.querySelector(`input[name="${n}"]:checked`);return r?r.value:"";};
+  const chk=n=>[...document.querySelectorAll(`input[name="${n}"]:checked`)].map(x=>x.value);
+  const d={tipo:v("d-tipo"),perfil:v("d-perfil"),estr:v("d-estr"),obj:chk("d-obj"),ext:rad("d-ext"),op:chk("d-op"),faixa:v("d-faixa"),urg:v("d-urg"),prazo:rad("d-prazo"),not:rad("d-not"),objetivo:v("d-objetivo"),risco:v("d-risco")};
+  S.diag=Object.assign(S.diag||{},d);
+  this.recompute();this.save();
+  
+  const payload = {
+    nome: S.user ? S.user.nome : null,
+    email: S.user ? S.user.email : null,
+    whatsapp: v("d-zap"),
+    empresa: v("d-emp"),
+    tipo: S.diag.tipo,
+    perfil: S.diag.perfil,
+    objetivo: S.diag.objetivo,
+    faixa: S.diag.faixa,
+    estrutura: S.diag.estr,
+    objetivos_lista: S.diag.obj,
+    exterior: S.diag.ext,
+    operacao_envolve: S.diag.op,
+    urgencia: S.diag.urg,
+    prazo_aberto: S.diag.prazo,
+    notificacao: S.diag.not,
+    risco: S.diag.risco,
+    scores: S.scores
+  };
+  fetch('/api/diagnostico', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  }).catch(e => console.error("Erro ao salvar diagnóstico remoto:", e));
+},
 recompute(){if(!S.diag||!S.diag.tipo)return;const d=Object.assign({},S.diag,{pat:S.pat,hasBiz:S.negocios.length>0,isMember:S.user&&S.user.plan==="member"});
 const detail=computeScores(d);S.scoreDetail=detail;
 const sc={};for(const k in detail)sc[k]=detail[k].value;S.scores=sc;},
@@ -773,9 +806,20 @@ el("chatlog").appendChild(d);el("chatlog").scrollTop=1e6;return d;},
 /* ---- hubs: render + ferramentas gratuitas ---- */
 prodRow(p){const desc=(S.user&&S.user.plan==="member"&&S.user.cycle==="anual")?0.10:0;
 const val=p.preco?Math.round(p.preco*(1-desc)):0;
-return `<div class="prod"><div><h3>${p.nome}</h3><p class="esc">${p.esc}</p><span class="meta">Prazo · ${p.prazo}</span></div>
-<div><div class="price">${p.preco?(p.apartir?"a partir de<br>":"")+fmt(val):"Sob proposta"}<small>${p.preco?"escopo fechado":"após diagnóstico"}</small></div>
-<button class="btn primary" onclick="APP.buy('${p.id}')">${p.preco?"Contratar":"Solicitar proposta"}</button></div></div>`;},
+const apartirHtml = p.preco && p.apartir ? `<span class="apartir">a partir de</span>` : "";
+const priceHtml = p.preco ? apartirHtml + fmt(val) : "Sob proposta";
+const labelHtml = `<span class="pricelabel">${p.preco ? "escopo fechado" : "após diagnóstico"}</span>`;
+return `<div class="prod">
+<div class="prod-info">
+<h3>${p.nome}</h3>
+<p class="esc">${p.esc}</p>
+<span class="meta">Prazo · ${p.prazo}</span>
+</div>
+<div class="prod-action">
+<div class="price">${priceHtml}${labelHtml}</div>
+<button class="btn primary" onclick="APP.buy('${p.id}')">${p.preco?"Contratar":"Solicitar proposta"}</button>
+</div>
+</div>`;},
 renderHub(key){const h=HUBS[key];if(!h)return false;
 el("hb-crumb").textContent=h.nome;el("hb-h1").textContent=h.h1;el("hb-sub").textContent=h.sub;
 el("hb-tese").textContent=h.tese;
