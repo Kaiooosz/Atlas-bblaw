@@ -298,7 +298,7 @@ function frame(){t+=0.006;settle=Math.min(1,settle+0.0045); /* converge para a o
 const ease=settle<.5?2*settle*settle:1-Math.pow(-2*settle+2,2)/2;
 ctx.clearRect(0,0,W,H);
 /* graticule sutil de fundo */
-ctx.strokeStyle="rgba(180,205,215,0.045)";ctx.lineWidth=1;
+ctx.strokeStyle="rgba(44,85,232,0.08)";ctx.lineWidth=1;
 for(let i=1;i<6;i++){ctx.beginPath();ctx.moveTo(0,H*i/6);ctx.quadraticCurveTo(W/2,H*i/6+H*.04,W,H*i/6);ctx.stroke();}
 /* posição atual interpola caos -> ordem, com respiração leve no fim */
 const pos=chaos.map(n=>{const bx=n.x+(n.tx-n.x)*ease,by=n.y+(n.ty-n.y)*ease;
@@ -306,7 +306,7 @@ const breathe=ease>.9?Math.sin(t*1.4+n.ph)*3*DPR:0;
 return{x:bx,y:by+breathe};});
 /* linhas do organograma: aparecem conforme a ordem se forma */
 links.forEach(([i,j])=>{const a=pos[i],b=pos[j];
-ctx.strokeStyle=`rgba(206,176,118,${0.05+ease*0.28})`;ctx.lineWidth=1.1*DPR;
+ctx.strokeStyle=`rgba(44,85,232,${0.05+ease*0.28})`;ctx.lineWidth=1.1*DPR;
 ctx.beginPath();ctx.moveTo(a.x,a.y);
 /* cotovelo de organograma quando organizado */
 if(ease>.6){const my=(a.y+b.y)/2;ctx.lineTo(a.x,my);ctx.lineTo(b.x,my);ctx.lineTo(b.x,b.y);}
@@ -315,10 +315,10 @@ ctx.stroke();});
 /* nós */
 pos.forEach((p,idx)=>{const n=chaos[idx];const g=(Math.sin(t*1.6+n.ph)+1)/2;
 const isRoot=n.tier===0;
-if(isRoot){ctx.fillStyle=`rgba(230,204,150,${0.7+g*0.3})`;
+if(isRoot){ctx.fillStyle=`rgba(255,255,255,${0.7+g*0.3})`;
 ctx.beginPath();ctx.arc(p.x,p.y,3.4*DPR,0,7);ctx.fill();
-ctx.strokeStyle=`rgba(230,204,150,${0.15+ease*0.2})`;ctx.beginPath();ctx.arc(p.x,p.y,8*DPR,0,7);ctx.stroke();}
-else{ctx.fillStyle=`rgba(214,228,234,${0.3+g*0.28+ease*0.15})`;
+ctx.strokeStyle=`rgba(255,255,255,${0.15+ease*0.2})`;ctx.beginPath();ctx.arc(p.x,p.y,8*DPR,0,7);ctx.stroke();}
+else{ctx.fillStyle=`rgba(44,85,232,${0.3+g*0.28+ease*0.15})`;
 ctx.beginPath();ctx.arc(p.x,p.y,2.3*DPR,0,7);ctx.fill();}});
 if(!reduced)requestAnimationFrame(frame);
 else settle=1;}
