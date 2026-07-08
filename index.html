@@ -478,35 +478,35 @@
 </div>
 
 <!-- ================= DIAGNÓSTICO ================= -->
-<div class="page" id="page-diagnostico">
+<div class="page" id="page-diagnostico" role="main" aria-label="Diagnóstico estratégico">
   <section class="page-hero center"><div class="wrap" style="max-width:720px">
-    <div class="crumb"><a href="#/home">BBLAW</a> / Atlas / Diagnóstico estratégico</div>
+    <nav class="crumb" aria-label="Caminho de navegação"><a href="#/home">BBLAW</a> / Atlas / Diagnóstico estratégico</nav>
     <h1>Diagnóstico estratégico</h1>
     <p class="lede">Suas respostas geram seu mapa em 10 dimensões e alimentam os achados do Atlas. Sob sigilo profissional.</p>
   </div></section>
   <section class="section tight"><div class="wrap">
     <div class="shell" id="diag-shell">
-      <span class="mono brand" id="diag-step-label">Etapa 1 de 4 · Sua demanda</span>
-      <div class="diag-prog" id="diag-prog"><span class="on"></span><span></span><span></span><span></span></div>
+      <span class="mono brand" id="diag-step-label" aria-live="polite" aria-atomic="true">Etapa 1 de 4 · Sua demanda</span>
+      <div class="diag-prog" id="diag-prog" role="progressbar" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1" aria-label="Progresso do diagnóstico"><span class="on"></span><span></span><span></span><span></span></div>
 
       <div class="fstep active" data-step="1">
-        <div class="field"><label for="d-tipo">Tipo de demanda *</label>
-          <select id="d-tipo" required><option value="">Selecionar</option>
+        <div class="field"><label for="d-tipo">Tipo de demanda <span aria-hidden="true">*</span><span class="sr-only">(obrigatório)</span></label>
+          <select id="d-tipo" required aria-required="true" aria-describedby="err-1"><option value="">Selecionar</option>
             <option>Internacionalização e offshore</option><option>LLC nos Estados Unidos</option>
             <option>Planejamento patrimonial e sucessório</option><option>Cripto / Web3</option>
             <option>Fintech / meios de pagamento</option><option>iGaming</option>
             <option>Societário</option><option>Contratos empresariais</option>
             <option>Compliance e regulação</option><option>Operações internacionais</option>
             <option>Ainda não sei. Quero avaliar minha estrutura</option></select></div>
-        <div class="field"><label for="d-perfil">Seu perfil *</label>
-          <select id="d-perfil" required><option value="">Selecionar</option>
+        <div class="field"><label for="d-perfil">Seu perfil <span aria-hidden="true">*</span><span class="sr-only">(obrigatório)</span></label>
+          <select id="d-perfil" required aria-required="true" aria-describedby="err-1"><option value="">Selecionar</option>
             <option>Empresário digital / infoprodutor</option><option>Trader ou investidor cripto</option>
             <option>Founder de fintech / gateway</option><option>Operação de iGaming</option>
             <option>Família empresária / patrimônio relevante</option><option>Empresa com operação internacional</option>
             <option>Founder de startup</option><option>Outro</option></select></div>
         <div class="field"><label for="d-objetivo">Principal objetivo</label>
           <textarea id="d-objetivo" placeholder="Ex.: receber vendas internacionais por uma LLC; proteger patrimônio antes de expandir; regularizar estrutura offshore existente."></textarea></div>
-        <p class="err" id="err-1">Selecione o tipo de demanda e o seu perfil para continuar.</p>
+        <p class="err" id="err-1" role="alert" aria-live="assertive">Selecione o tipo de demanda e o seu perfil para continuar.</p>
       </div>
 
       <div class="fstep" data-step="2">
@@ -557,17 +557,17 @@
           <div class="optrow"><label><input type="radio" name="d-not" value="Sim"> Sim</label><label><input type="radio" name="d-not" value="Não"> Não</label></div></div>
         <div class="field"><label for="d-risco">Principal risco ou problema, na sua visão</label>
           <textarea id="d-risco" placeholder="Descreva em poucas linhas."></textarea></div>
-        <p class="err" id="err-3">Informe o nível de urgência para continuar.</p>
+        <p class="err" id="err-3" role="alert" aria-live="assertive">Informe o nível de urgência para continuar.</p>
       </div>
 
       <div class="fstep" data-step="4">
         <p class="lede" style="margin-bottom:22px">Confirme seus dados de contato para receber o retorno da equipe.</p>
         <div class="f2">
           <div class="field"><label for="d-emp">Empresa (se houver)</label><input id="d-emp"></div>
-          <div class="field"><label for="d-zap">WhatsApp *</label><input id="d-zap" placeholder="+55 (11) 9"></div>
+          <div class="field"><label for="d-zap">WhatsApp <span aria-hidden="true">*</span><span class="sr-only">(obrigatório)</span></label><input id="d-zap" placeholder="+55 (11) 9" aria-required="true" aria-describedby="err-4" type="tel" autocomplete="tel"></div>
         </div>
         <p class="hint">Informações tratadas sob sigilo profissional e LGPD.</p>
-        <p class="err" id="err-4">Informe o WhatsApp para enviar.</p>
+        <p class="err" id="err-4" role="alert" aria-live="assertive">Informe o WhatsApp para enviar.</p>
       </div>
 
       <div class="fstep" data-step="5">
@@ -577,26 +577,30 @@
         <a class="btn primary" href="#/portal">Abrir o Atlas</a>
       </div>
 
-      <div class="diag-nav" id="diag-nav">
-        <button class="btn light" id="diag-back" style="visibility:hidden">Voltar</button>
-        <button class="btn primary" id="diag-next">Continuar</button>
+      <div class="diag-nav" id="diag-nav" role="group" aria-label="Navegação do formulário">
+        <button class="btn light" id="diag-back" style="visibility:hidden" aria-label="Voltar para etapa anterior">Voltar</button>
+        <button class="btn primary" id="diag-next" aria-label="Continuar para próxima etapa">Continuar</button>
       </div>
     </div>
   </div></section>
 </div>
 
 <!-- ================= CONTATO ================= -->
-<div class="page" id="page-contato">
+<div class="page" id="page-contato" role="main" aria-label="Página de contato">
   <section class="page-hero center"><div class="wrap" style="max-width:640px">
-    <div class="crumb"><a href="#/home">BBLAW</a> / Contato</div>
+    <nav class="crumb" aria-label="Caminho de navegação"><a href="#/home">BBLAW</a> / Contato</nav>
     <h1>Falar com a equipe</h1>
     <p class="lede">Para demandas, o caminho mais rápido é o diagnóstico. Para outros assuntos, escreva abaixo.</p>
   </div></section>
   <section class="section tight"><div class="wrap"><div class="shell" style="max-width:520px" id="contact-shell">
-    <div class="field"><label for="ct-nome">Nome</label><input id="ct-nome"></div>
-    <div class="field"><label for="ct-email">E-mail</label><input id="ct-email" type="email"></div>
-    <div class="field"><label for="ct-msg">Mensagem</label><textarea id="ct-msg"></textarea></div>
-    <button class="btn primary" style="width:100%" onclick="APP.contact()">Enviar mensagem</button>
+    <form id="contact-form" novalidate aria-label="Formulário de contato">
+      <div class="field"><label for="ct-nome">Nome <span aria-hidden="true">*</span><span class="sr-only">(obrigatório)</span></label><input id="ct-nome" required aria-required="true" autocomplete="name" placeholder="Seu nome completo"></div>
+      <div class="field"><label for="ct-email">E-mail <span aria-hidden="true">*</span><span class="sr-only">(obrigatório)</span></label><input id="ct-email" type="email" required aria-required="true" autocomplete="email" placeholder="seu@email.com"></div>
+      <div class="field"><label for="ct-assunto">Assunto</label><select id="ct-assunto" aria-label="Assunto da mensagem"><option value="">Selecionar (opcional)</option><option>Dúvida sobre serviços</option><option>Orçamento</option><option>Imprensa / parcerias</option><option>Outro</option></select></div>
+      <div class="field"><label for="ct-msg">Mensagem <span aria-hidden="true">*</span><span class="sr-only">(obrigatório)</span></label><textarea id="ct-msg" required aria-required="true" placeholder="Descreva sua questão ou dúvida em poucas linhas."></textarea></div>
+      <p class="err" id="ct-err" role="alert" aria-live="assertive">Preencha nome, e-mail e mensagem para continuar.</p>
+      <button class="btn primary" id="ct-submit" style="width:100%" type="button" onclick="APP.contact()">Enviar mensagem</button>
+    </form>
   </div></div></section>
 </div>
 <!-- ================= ATLAS (portal) ================= -->

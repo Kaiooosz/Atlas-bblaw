@@ -162,7 +162,45 @@ login(){const e=el("li-email").value.trim();
 if(S.user&&S.user.email===e){this.syncNav();location.hash="#/"+(pendingRoute||"portal");pendingRoute=null;}
 else el("li-err").style.display="block";},
 logout(){S.user=null;this.save();this.syncNav();location.hash="#/home";},
-contact(){el("contact-shell").innerHTML='<div class="ok-note">Mensagem enviada. Retornamos pelo e-mail informado.</div>';},
+contact(){
+  const nome = (el('ct-nome')||{value:''}).value.trim();
+  const email = (el('ct-email')||{value:''}).value.trim();
+  const msg   = (el('ct-msg')||{value:''}).value.trim();
+  const assunto = (el('ct-assunto')||{value:''}).value || 'Contato via site';
+  const errEl = el('ct-err');
+  const submitBtn = el('ct-submit');
+
+  // Validação
+  if (!nome || !email || !msg || !/.+@.+\..+/.test(email)) {
+    if (errEl) errEl.style.display = 'block';
+    if (!nome) el('ct-nome') && el('ct-nome').focus();
+    return;
+  }
+  if (errEl) errEl.style.display = 'none';
+
+  // Loading state
+  if (submitBtn) { submitBtn.disabled = true; submitBtn.textContent = 'Enviando…'; }
+
+  // Envia via mailto com corpo estruturado
+  const corpo = `Nome: ${nome}\nE-mail: ${email}\nAssunto: ${assunto}\n\nMensagem:\n${msg}`;
+  const mailtoLink = `mailto:contato@bblaw.com.br?subject=${encodeURIComponent('[Site] ' + assunto + ' — ' + nome)}&body=${encodeURIComponent(corpo)}`;
+
+  // Tenta abrir cliente de e-mail
+  window.open(mailtoLink, '_blank');
+
+  // Mostra confirmação na shell
+  setTimeout(() => {
+    const shell = el('contact-shell');
+    if (shell) {
+      shell.innerHTML = `<div style="text-align:center;padding:24px 0">
+        <span class="mono brand" style="display:block;margin-bottom:16px">Mensagem preparada</span>
+        <h2 style="margin-bottom:12px;font-size:1.4rem">Seu cliente de e-mail foi aberto.</h2>
+        <p style="color:var(--muted);margin-bottom:22px">Confirme o envio pelo seu e-mail.<br>Ou envie diretamente para <a href="mailto:contato@bblaw.com.br" class="textlink">contato@bblaw.com.br</a></p>
+        <a class="btn primary" href="#/diagnostico">Iniciar diagnóstico</a>
+      </div>`;
+    }
+  }, 600);
+},
 
 /* ---- diagnóstico → scores ---- */
 onDiagnosticComplete(){
