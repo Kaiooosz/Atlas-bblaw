@@ -4,3 +4,4 @@ test-results/
 *.log
 update_atlas.py
 update_responsive.py
+dist/

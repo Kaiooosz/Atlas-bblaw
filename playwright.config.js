@@ -13,7 +13,7 @@ module.exports = defineConfig({
     video: 'retain-on-failure',
   },
   webServer: {
-    command: 'npx serve . -p 3333 --no-clipboard',
+    command: 'npx serve dist -p 3333 --no-clipboard',
     port: 3333,
     reuseExistingServer: !process.env.CI,
   },
