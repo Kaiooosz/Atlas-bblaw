@@ -64,11 +64,12 @@ header{position:fixed;top:0;left:0;right:0;z-index:60;background:rgba(25, 27, 33
   .nav-links.open{display:flex}.burger{display:block}
 }
 .btn{display:inline-block;text-decoration:none;font-weight:600;font-size:.9rem;padding:15px 30px;border-radius:10px;border:none;transition:all .15s;text-align:center}
-.btn.primary{background:var(--petrol);color:#fdfdfb;box-shadow:var(--shadow-sm)}
+.btn.primary{background:var(--petrol);color:#FFFFFF;box-shadow:var(--shadow-sm)}
 .btn.primary:hover{background:var(--petrol-deep);transform:translateY(-1px)}
-.btn.light{background:var(--surface);color:var(--petrol);box-shadow:var(--shadow-sm)}
-.btn.light:hover{transform:translateY(-1px)}
-.btn.brass{background:var(--brass);color:#fdfdfb}
+.btn.light{background:#FFFFFF;color:#191B21;box-shadow:var(--shadow-sm)}
+.btn.light:hover{background:#E6E6E6;transform:translateY(-1px)}
+.btn.brass{background:transparent;color:#FFFFFF;border:1px solid rgba(255, 255, 255, 0.25);box-shadow:none}
+.btn.brass:hover{background:rgba(255, 255, 255, 0.08);transform:translateY(-1px)}
 .btn-row{display:flex;gap:14px;flex-wrap:wrap}
 .textlink{font-size:.88rem;font-weight:600;text-decoration:none;color:var(--petrol)}
 .textlink:hover{text-decoration:underline}
